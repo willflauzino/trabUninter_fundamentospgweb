@@ -109,6 +109,7 @@ nav ul {
 /* Conteúdo */
 main {
     padding: 20px;
+    min-height: 250px; /*garantindo que o menu vai ter espaço para apresentar todos os itens mesmo que a página tenha pouco conteúdo */
 }
 
 h2 {
