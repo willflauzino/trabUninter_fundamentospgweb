@@ -7,13 +7,33 @@
     <link rel="shortcut icon" href="img/cerebro ai.png!sw800">
     <title>Portfólio - Willian Flauzino</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="javascript/controle.js"></script>
 </head>
 
 <body>
     <header>
-        <!--A div abaixo está sendo usada coomo referência para apendar o conteúdo header dinâmicamente com o uso de javascript-->
-        <div id="header-container"></div>
+        <div class="cabeçalho">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="img/cerebro ai.png!sw800" alt="Ícone tecnologia" width="80">
+                    <h1>Willian Flauzino</h1>
+                </a>
+            </div>
+
+            <!-- Botão sanduíche -->
+            <div class="menu-toggle" id="menu-toggle">
+                &#9776;
+            </div>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre Mim</a></li>
+                    <li><a href="formacao.html">Formação</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section>
@@ -28,6 +48,7 @@
     <footer>
         <p>&copy; 2025 - Willian Flauzino</p>
     </footer>
+    <script src="javascript/controle.js"></script>
 </body>
 
 </html>

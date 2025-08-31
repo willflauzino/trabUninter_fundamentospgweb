@@ -1,13 +1,10 @@
 // script.js
-//script responsável por "capturar" as informações no arquivo header.hml e appendar na div com id "header-container" em todas págias
-//Dessa maneira posso escrever o código dos menus somente uma vez e utilizá-lo em todas as páginas, facilitando desenvolvimento e manutenção do código
+//Controle para colapsar o menu em caso a tela seja pequena (facilita a navegação pelo celular)
 {
-    fetch('header.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('header-container').innerHTML = data;
-        })
-        .catch(error => console.error('Erro ao carregar o cabeçalho:', error));
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.querySelector('nav ul');
 
-
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('show');
+    });
 }

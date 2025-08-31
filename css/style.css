@@ -69,6 +69,43 @@ nav ul li a:hover {
     color: #f0c472;
 }
 
+/* Menu padrão no desktop */
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu-toggle {
+  display: none; /* escondido no desktop */
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* abaixo do cabeçalho */
+    right: 0;
+    background-color: #0a2a43;
+    width: 200px;
+    padding: 10px;
+    display: none; /* começa escondido */
+  }
+
+  nav ul.show {
+    display: flex; /* aparece quando ativado */
+  }
+
+  .menu-toggle {
+    display: block; /* mostra o ícone sanduíche */
+  }
+}
+
+
 /* Conteúdo */
 main {
     padding: 20px;
