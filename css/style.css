@@ -166,3 +166,9 @@ footer {
         margin: 10px 0;
     }
 }
+
+.img_decor {
+  display: flex;
+  justify-content: center; /* centraliza na horizontal */
+  align-items: center;     /* centraliza na vertical */
+}
